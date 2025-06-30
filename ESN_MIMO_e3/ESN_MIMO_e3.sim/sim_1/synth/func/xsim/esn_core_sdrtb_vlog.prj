@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1" -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/new" -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sim_1" \
+"esn_core_sdrtb_func_synth.v" \
+
+sv xil_defaultlib  -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1" -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/new" -i "../../../../../../../../D:/XilinxProjects/digitalesn/digitalesn.srcs/sim_1" \
+"../../../../../ESN_test1.srcs/sources_1/dsp_array.v" \
+"../../../../../ESN_test1.srcs/sources_1/dual_reservoir_neuron.v" \
+"../../../../../ESN_test1.srcs/sources_1/esn_core.v" \
+"../../../../../ESN_test1.srcs/sources_1/loadweights.v" \
+"../../../../../ESN_test1.srcs/sources_1/output_neuron_dsp.v" \
+"../../../../../ESN_test1.srcs/sources_1/return_conf.v" \
+"../../../../../ESN_test1.srcs/sim_1/esn_core_sdrtb.v" \
+
+# Do not sort compile order
+nosort

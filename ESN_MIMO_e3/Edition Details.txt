@@ -1,0 +1,14 @@
+Current:
+The MIMO simulation works well.
+The UART-configuration-communication works well.
+The ethernet-data-communication cannot work.
+
+Added a by-pass register-read/write logic inside the esn_core.
+Only use the esn_core_tb as the testbench
+The simulation waveform looks good but still not work on FPGA.
+
+TODO:
+Use the demo_tb.v to test the esn_core_with_FIFO
+Add flag bits or LCD display to debug the FPGA communcation procedure.
+
+

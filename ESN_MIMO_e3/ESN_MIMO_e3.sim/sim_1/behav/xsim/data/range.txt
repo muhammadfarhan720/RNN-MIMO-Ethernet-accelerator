@@ -1,0 +1,7 @@
+The range of inputs is (-0.071533203125, 0.069366455078125)                            , the abs_mean is 0.011656861901283264
+The range of W_in is (-0.999176025390625, 0.987823486328125)                            , the abs_mean is 0.506131935119629
+The range of W_x is (-0.067474365234375, 0.06597900390625)                            , the abs_mean is 0.024631023406982422
+The range of Sop is (-0.27884179882255855, 0.26683208121070445)                            , the abs_mean is 0.04652905316172377
+The range of state is (-0.2718315124511719, 0.26067352294921875)                            , the abs_mean is 0.0174617571507891
+The range of W_out is (-393.2073093710247, 592.4635342690157)                            , the abs_mean is 94.3153058708773
+The range of output is (-2.465146796673002, 2.4423788780465627)                            , the abs_mean is 0.4889482674509777

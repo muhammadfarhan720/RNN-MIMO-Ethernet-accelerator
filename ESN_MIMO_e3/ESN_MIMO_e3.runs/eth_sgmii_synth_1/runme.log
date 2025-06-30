@@ -1,0 +1,872 @@
+
+*** Running vivado
+    with args -log eth_sgmii.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_sgmii.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source eth_sgmii.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 378.406 ; gain = 71.473
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/azmin/Desktop/ESN_editions_ISQED/ESN-SD/digitalesn/digitalesn.ipdefs/ip_tfu_tanh_purelut_0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: eth_sgmii
+Command: synth_design -top eth_sgmii -part xc7z010iclg225-1L -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/eth_sgmii.xci
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/eth_sgmii.xci
+
+INFO: [IP_Flow 19-2162] IP 'eth_sgmii' is locked:
+* IP definition '1G/2.5G Ethernet PCS/PMA or SGMII (16.1)' for IP 'eth_sgmii' (customized with software release 2019.1.3) has a newer minor version in the IP Catalog. * Current project part 'xc7z010iclg225-1L' and the part 'xc7vx485tffg1761-2' used to customize the IP 'eth_sgmii' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010i'
+INFO: [Device 21-403] Loading part xc7z010iclg225-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10412
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1199.789 ; gain = 408.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii.v:94]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_block' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:95]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_sgmii_adapt' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_sgmii_adapt.v:124]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_reset_sync' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38635]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38635]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_reset_sync' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_sync_block' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38467]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38467]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_sync_block' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_clk_gen' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_johnson_cntr' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_johnson_cntr' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_clk_gen' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_tx_rate_adapt' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_tx_rate_adapt.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_tx_rate_adapt' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_tx_rate_adapt.v:72]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_rx_rate_adapt' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_rx_rate_adapt' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_sgmii_adapt' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/sgmii_adapt/eth_sgmii_sgmii_adapt.v:124]
+WARNING: [Synth 8-7071] port 's_axi_aclk' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_resetn' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_awaddr' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_awvalid' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_wdata' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_wvalid' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_bready' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_araddr' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_arvalid' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_arready' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_rdata' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_rresp' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_rvalid' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7071] port 's_axi_rready' of module 'gig_ethernet_pcs_pma_v16_1_6' is unconnected for instance 'eth_sgmii_core' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+WARNING: [Synth 8-7023] instance 'eth_sgmii_core' of module 'gig_ethernet_pcs_pma_v16_1_6' has 94 connections declared, but only 76 given [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:289]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_transceiver' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_transceiver.v:61]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_reset_wtd_timer' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_reset_wtd_timer.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_reset_wtd_timer' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_reset_wtd_timer.v:65]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_GTWIZARD' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard.v:69]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_GTWIZARD_init' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_init.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_GTWIZARD_multi_gt' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_multi_gt.v:71]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_GTWIZARD_GT' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_gt.v:72]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
+	Parameter PMA_RSV_IN bound to: 99456 - type: integer 
+	Parameter PCS_RSVD_ATTR_IN bound to: 48'b000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'GTXE2_CHANNEL' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:49244]
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b0001111111 
+	Parameter ALIGN_COMMA_WORD bound to: 2 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 36 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 32 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 24'b101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 99456 - type: integer 
+	Parameter PMA_RSV2 bound to: 16'b0010000001010000 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 0 - type: integer 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 8 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 72'b000000110000000000000000001000111111111100010000000100000000000000100000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00000011110000 
+	Parameter RXLPM_LF_CFG bound to: 14'b00000011110000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOUT_DIV bound to: 4 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b000000000000000000000000 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RX_BIAS_CFG bound to: 12'b000000000100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 3'b010 
+	Parameter RX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 12'b000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFE_GAIN_CFG bound to: 23'b00000100000111111101010 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011110000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_KL_CFG bound to: 13'b0000011111110 
+	Parameter RX_DFE_KL_CFG2 bound to: 806439084 - type: integer 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000100100000100 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_UT_CFG bound to: 17'b10001111000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011111100000011 
+	Parameter RX_DFE_XYD_CFG bound to: 13'b0000000000000 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 0 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b0101 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 5'b10000 
+	Parameter TERM_RCAL_OVRD bound to: 1'b0 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 4 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 5'b00000 
+	Parameter TX_DEEMPH1 bound to: 5'b00000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 0 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTXE2_CHANNEL' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:49244]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_GTWIZARD_GT' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_gt.v:72]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_cpll_railing' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_cpll_railing.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_cpll_railing' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_cpll_railing.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_GTWIZARD_multi_gt' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_multi_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_TX_STARTUP_FSM' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_tx_startup_fsm.v:73]
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter TX_QPLL_USED bound to: FALSE - type: string 
+	Parameter RX_QPLL_USED bound to: FALSE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_TX_STARTUP_FSM' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_tx_startup_fsm.v:73]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_RX_STARTUP_FSM' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:73]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter EQ_MODE bound to: LPM - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_QPLL_USED bound to: FALSE - type: string 
+	Parameter RX_QPLL_USED bound to: FALSE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_RX_STARTUP_FSM' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_GTWIZARD_init' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard_init.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_GTWIZARD' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_gtwizard.v:69]
+INFO: [Synth 8-6157] synthesizing module 'eth_sgmii_rx_elastic_buffer' [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_elastic_buffer.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_rx_elastic_buffer' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_elastic_buffer.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_transceiver' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_transceiver.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii_block' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_block.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'eth_sgmii' (0#1) [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii.v:94]
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:358]
+WARNING: [Synth 8-6014] Unused sequential element refclk_stable_reg was removed.  [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:517]
+WARNING: [Synth 8-6014] Unused sequential element refclk_stable_count_reg was removed.  [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:516]
+WARNING: [Synth 8-6014] Unused sequential element pll_reset_asserted_reg was removed.  [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_rx_startup_fsm.v:553]
+WARNING: [Synth 8-6014] Unused sequential element rxpowerdown_reg_reg was removed.  [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/transceiver/eth_sgmii_transceiver.v:234]
+WARNING: [Synth 8-7129] Port QPLLREFCLKLOST in module eth_sgmii_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CPLLREFCLKLOST in module eth_sgmii_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLLLOCK in module eth_sgmii_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLLREFCLKLOST in module eth_sgmii_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port QPLLLOCK in module eth_sgmii_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gt0_cpllreset_in in module eth_sgmii_GTWIZARD_init is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRUNDISP in module RX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module RX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module SYNCHRONISE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[15] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[14] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[13] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[11] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[10] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_NP_TX[15] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_NP_TX[12] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BASEX_OR_SGMII in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RESET_DONE in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bvalid in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[31] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[30] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[29] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[28] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[27] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[26] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[25] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[24] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[23] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[22] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[21] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[20] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[19] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[18] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[17] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[16] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[15] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[14] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[13] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[12] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[11] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[10] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[9] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[8] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[7] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[6] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[5] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[4] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[3] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[2] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rvalid in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[15] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[14] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[13] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[12] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[11] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[10] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[9] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[8] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[7] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[6] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[5] in module MANAGEMENT is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1332.621 ; gain = 541.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1332.621 ; gain = 541.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1332.621 ; gain = 541.312
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1333.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/eth_sgmii_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/eth_sgmii_board.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/eth_sgmii_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eth_sgmii_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/eth_sgmii_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.srcs/sources_1/ip/eth_sgmii/synth/eth_sgmii.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eth_sgmii_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/eth_sgmii_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1438.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 254 instances were transformed.
+  FD => FDRE: 204 instances
+  FDP => FDPE: 48 instances
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1438.723 ; gain = 0.430
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010iclg225-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'SYNCHRONISE'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.TX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'eth_sgmii_TX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'eth_sgmii_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            loss_of_sync |                    0000000000100 |                             0000
+          comma_detect_1 |                    0010000000000 |                             0001
+           aquire_sync_1 |                    0000000010000 |                             0010
+          comma_detect_2 |                    0000000000001 |                             0011
+           aquire_sync_2 |                    0000000000010 |                             0100
+          comma_detect_3 |                    0000000001000 |                             0101
+         sync_acquired_1 |                    1000000000000 |                             0110
+         sync_acquired_2 |                    0001000000000 |                             0111
+        sync_acquired_2a |                    0100000000000 |                             1000
+         sync_acquired_3 |                    0000001000000 |                             1001
+        sync_acquired_3a |                    0000100000000 |                             1010
+         sync_acquired_4 |                    0000010000000 |                             1011
+        sync_acquired_4a |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'SYNCHRONISE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.TX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+       WAIT_FOR_TXOUTCLK |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_TXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+          RESET_FSM_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'eth_sgmii_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'eth_sgmii_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 3     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 12    
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 25    
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 318   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 9     
+	   3 Input   16 Bit        Muxes := 2     
+	  17 Input   16 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 2     
+	   3 Input   15 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 2     
+	   3 Input   14 Bit        Muxes := 1     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 18    
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 10    
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 13    
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 7     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 109   
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 7     
+	  10 Input    1 Bit        Muxes := 18    
+	   5 Input    1 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (gpcs_pma_inst/FSM_onehot_USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg[14]) is unused and will be removed from module gig_ethernet_pcs_pma_v16_1_6.
+INFO: [Synth 8-3332] Sequential element (gpcs_pma_inst/FSM_onehot_USE_ROCKET_IO.TX_RST_SM_reg[14]) is unused and will be removed from module gig_ethernet_pcs_pma_v16_1_6.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                      | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+|inst        | transceiver_inst/rx_elastic_buffer_inst/ram_reg | User Attribute | 64 x 36              | RAM64M x 12  | 
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                      | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+|inst        | transceiver_inst/rx_elastic_buffer_inst/ram_reg | User Attribute | 64 x 36              | RAM64M x 12  | 
++------------+-------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                  | RTL Name                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gig_ethernet_pcs_pma_v16_1_6 | gpcs_pma_inst/RX_GMII_AT_TXOUTCLK.RECEIVER_TXOUTCLK/RXDATA_REG5_reg[7]                 | 5      | 8     | NO           | NO                 | NO                | 8      | 0       | 
+|eth_sgmii_block              | transceiver_inst/gtwizard_inst/inst/gtwizard_i/cpll_railing0_i/cpllreset_wait_reg[127] | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
+|eth_sgmii_block              | transceiver_inst/gtwizard_inst/inst/gtwizard_i/cpll_railing0_i/cpllpd_wait_reg[95]     | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
++-----------------------------+----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |CARRY4        |    61|
+|2     |GTXE2_CHANNEL |     1|
+|3     |LUT1          |    67|
+|4     |LUT2          |    96|
+|5     |LUT3          |   160|
+|6     |LUT4          |   156|
+|7     |LUT5          |   150|
+|8     |LUT6          |   192|
+|9     |RAM64M        |    10|
+|10    |SRL16         |     2|
+|11    |SRL16E        |     8|
+|12    |SRLC32E       |     7|
+|13    |FD            |   204|
+|14    |FDCE          |    18|
+|15    |FDP           |    48|
+|16    |FDPE          |     4|
+|17    |FDRE          |   957|
+|18    |FDSE          |    65|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 389 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:55 . Memory (MB): peak = 1438.723 ; gain = 541.312
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1438.723 ; gain = 647.414
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1438.723 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 325 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1438.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 264 instances were transformed.
+  FD => FDRE: 204 instances
+  FDP => FDPE: 48 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete, checksum: 9e00028
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:11 . Memory (MB): peak = 1438.723 ; gain = 1026.844
+INFO: [Common 17-1381] The checkpoint 'C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1/eth_sgmii.dcp' has been generated.
+WARNING: [Coretcl 2-1799] Unable to create IP cache entry for IP eth_sgmii: Unable to determine cache-id for IP eth_sgmii
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1/eth_sgmii.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file eth_sgmii_utilization_synth.rpt -pb eth_sgmii_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 17:03:45 2023...

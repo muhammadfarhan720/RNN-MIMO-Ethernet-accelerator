@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dual_reservoir_neuron_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="dual_reservoir_neuron_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="49166667fs"></ZoomStartTime>
+      <ZoomEndTime time="123499044fs"></ZoomEndTime>
+      <Cursor1Time time="295000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="322"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/dual_reservoir_neuron_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/run" type="logic">
+      <obj_property name="ElementShortName">run</obj_property>
+      <obj_property name="ObjectShortName">run</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/rstate_reg" type="array">
+      <obj_property name="ElementShortName">rstate_reg[0:15][19:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate_reg[0:15][19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[0:3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[0:3][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/rstate_ex" type="array">
+      <obj_property name="ElementShortName">rstate_ex[0:19][19:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate_ex[0:19][19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">19</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/w_ex[0]" type="array">
+      <obj_property name="ElementShortName">[0][0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[0][0:19][15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/w_ex[1]" type="array">
+      <obj_property name="ElementShortName">[1][0:19][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[1][0:19][15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/echostate_a" type="array">
+      <obj_property name="ElementShortName">echostate_a[19:0]</obj_property>
+      <obj_property name="ObjectShortName">echostate_a[19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">19</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/echostate_b" type="array">
+      <obj_property name="ElementShortName">echostate_b[19:0]</obj_property>
+      <obj_property name="ObjectShortName">echostate_b[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/echoready" type="logic">
+      <obj_property name="ElementShortName">echoready</obj_property>
+      <obj_property name="ObjectShortName">echoready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_00a" type="array">
+      <obj_property name="ElementShortName">P_00a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_00a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_10a" type="array">
+      <obj_property name="ElementShortName">P_10a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_10a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_20a" type="array">
+      <obj_property name="ElementShortName">P_20a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_20a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_01a" type="array">
+      <obj_property name="ElementShortName">P_01a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_01a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_11a" type="array">
+      <obj_property name="ElementShortName">P_11a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_11a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_21a" type="array">
+      <obj_property name="ElementShortName">P_21a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_21a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_02a" type="array">
+      <obj_property name="ElementShortName">P_02a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_02a[47:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_12a" type="array">
+      <obj_property name="ElementShortName">P_12a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_12a[47:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">34</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/P_22a" type="array">
+      <obj_property name="ElementShortName">P_22a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">P_22a[47:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/fsmcnt" type="array">
+      <obj_property name="ElementShortName">fsmcnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">fsmcnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/sopa_sign_reg" type="logic">
+      <obj_property name="ElementShortName">sopa_sign_reg</obj_property>
+      <obj_property name="ObjectShortName">sopa_sign_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/sopa_residual_reg" type="array">
+      <obj_property name="ElementShortName">sopa_residual_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sopa_residual_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/sopa_abs" type="array">
+      <obj_property name="ElementShortName">sopa_abs[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sopa_abs[47:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">34</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/sopa_lut_8" type="array">
+      <obj_property name="ElementShortName">sopa_lut_8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sopa_lut_8[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_00a" type="array">
+      <obj_property name="ElementShortName">A_00a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_00a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_10a" type="array">
+      <obj_property name="ElementShortName">A_10a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_10a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_20a" type="array">
+      <obj_property name="ElementShortName">A_20a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_20a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_01a" type="array">
+      <obj_property name="ElementShortName">A_01a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_01a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_11a" type="array">
+      <obj_property name="ElementShortName">A_11a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_11a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_21a" type="array">
+      <obj_property name="ElementShortName">A_21a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_21a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_02a" type="array">
+      <obj_property name="ElementShortName">A_02a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_02a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_12a" type="array">
+      <obj_property name="ElementShortName">A_12a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_12a[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/A_22a" type="array">
+      <obj_property name="ElementShortName">A_22a[24:0]</obj_property>
+      <obj_property name="ObjectShortName">A_22a[24:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">10</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_00a" type="array">
+      <obj_property name="ElementShortName">B_00a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_00a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_10a" type="array">
+      <obj_property name="ElementShortName">B_10a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_10a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_20a" type="array">
+      <obj_property name="ElementShortName">B_20a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_20a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_01a" type="array">
+      <obj_property name="ElementShortName">B_01a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_01a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_11a" type="array">
+      <obj_property name="ElementShortName">B_11a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_11a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_21a" type="array">
+      <obj_property name="ElementShortName">B_21a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_21a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_02a" type="array">
+      <obj_property name="ElementShortName">B_02a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_02a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_12a" type="array">
+      <obj_property name="ElementShortName">B_12a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_12a[17:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/B_22a" type="array">
+      <obj_property name="ElementShortName">B_22a[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B_22a[17:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dual_reservoir_neuron_tb/drn_inst/C_22a" type="array">
+      <obj_property name="ElementShortName">C_22a[47:0]</obj_property>
+      <obj_property name="ObjectShortName">C_22a[47:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>

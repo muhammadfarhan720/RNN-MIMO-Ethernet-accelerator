@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[0].drn_inst .tfu_2_port_lut_inst.inst.lut_intercept_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[0].drn_inst .tfu_2_port_lut_inst.inst.lut_slope_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[1].drn_inst .tfu_2_port_lut_inst.inst.lut_intercept_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[1].drn_inst .tfu_2_port_lut_inst.inst.lut_slope_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[2].drn_inst .tfu_2_port_lut_inst.inst.lut_intercept_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[2].drn_inst .tfu_2_port_lut_inst.inst.lut_slope_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[3].drn_inst .tfu_2_port_lut_inst.inst.lut_intercept_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module esn_core_sdrtb.esn_core_inst.\rn[3].drn_inst .tfu_2_port_lut_inst.inst.lut_slope_inst.inst.\native_mem_module.blk_mem_gen_v8_4_2_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: xsimkernel Simulation Memory Usage: 49556 KB (Peak: 49556 KB), Simulation CPU Usage: 10811 ms

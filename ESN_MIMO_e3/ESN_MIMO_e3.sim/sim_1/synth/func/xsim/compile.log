@@ -1,0 +1,85 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.sim/sim_1/synth/func/xsim/esn_core_sdrtb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeA
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeB
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC
+INFO: [VRFC 10-311] analyzing module dsp_array
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__1
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__10
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__11
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__12
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__13
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__14
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__15
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__16
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__17
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__2
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__3
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__4
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__5
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__6
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__7
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__8
+INFO: [VRFC 10-311] analyzing module dsp_array__xdcDup__9
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__1
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__2
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__3
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__4
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__5
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__6
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron__xdcDup__7
+INFO: [VRFC 10-311] analyzing module esn_core
+INFO: [VRFC 10-311] analyzing module loadweights
+INFO: [VRFC 10-311] analyzing module output_neuron_dsp
+INFO: [VRFC 10-311] analyzing module output_neuron_dsp__xdcDup__1
+INFO: [VRFC 10-311] analyzing module return_conf
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_lut_intercept
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_lut_slope
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_tfu_tanh_purelut
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeA_xbip_dsp48_macro_v3_0_17
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeB_xbip_dsp48_macro_v3_0_17
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC_xbip_dsp48_macro_v3_0_17
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_generic_cstr__parameterized0
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_prim_width__parameterized0
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_prim_wrapper_init__parameterized0
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_top__parameterized0
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_v8_4_2
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_v8_4_2__parameterized1
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_v8_4_2_synth
+INFO: [VRFC 10-311] analyzing module tfu_tanh_purelut_8_19_blk_mem_gen_v8_4_2_synth__parameterized0
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeA_xbip_dsp48_macro_synth
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeA_xbip_dsp48_macro_v3_0_17_viv
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeA_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeB_xbip_dsp48_macro_synth
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeB_xbip_dsp48_macro_v3_0_17_viv
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeB_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC_xbip_dsp48_macro_synth
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC_xbip_dsp48_macro_v3_0_17_viv
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module dsp48_macro_typeC_xbip_pipe_v3_0_6_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/dsp_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dsp_array
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'dsp_array' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/dsp_array.v:22]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/dual_reservoir_neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_reservoir_neuron
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'dual_reservoir_neuron' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/dual_reservoir_neuron.v:41]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/esn_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module esn_core
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'esn_core' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/esn_core.v:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/loadweights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module loadweights
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'loadweights' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/loadweights.v:1]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/output_neuron_dsp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_neuron_dsp
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'output_neuron_dsp' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/output_neuron_dsp.v:22]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/return_conf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module return_conf
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'return_conf' [/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sources_1/return_conf.v:1]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/chunxiao/Documents/ESN_test1/ESN_test1/ESN_test1.srcs/sim_1/esn_core_sdrtb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module esn_core_sdrtb

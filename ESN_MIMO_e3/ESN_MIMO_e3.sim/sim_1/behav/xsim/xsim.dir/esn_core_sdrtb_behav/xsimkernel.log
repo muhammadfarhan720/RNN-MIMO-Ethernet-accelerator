@@ -1,0 +1,7 @@
+Running: xsim.dir/esn_core_sdrtb_behav/xsimk.exe -simmode gui -wdb esn_core_sdrtb_behav.wdb -simrunnum 0 -socket 52470
+Design successfully loaded
+Design Loading Memory Usage: 33228 KB (Peak: 33228 KB)
+Design Loading CPU Usage: 92 ms
+Simulation completed
+Simulation Memory Usage: 49556 KB (Peak: 49556 KB)
+Simulation CPU Usage: 10811 ms

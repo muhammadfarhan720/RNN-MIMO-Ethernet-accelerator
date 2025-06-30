@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../digitalesn.srcs/sources_1/bd/mbsys/ipshared/85a3" --include "../../../../../digitalesn.srcs/sources_1/bd/mbsys/ipshared/ec67/hdl" --include "../../../../../digitalesn.srcs/sources_1/new" \
+"reservoir_neuron_tb_func_synth.v" \
+
+sv xil_defaultlib  --include "../../../../../digitalesn.srcs/sources_1/bd/mbsys/ipshared/85a3" --include "../../../../../digitalesn.srcs/sources_1/bd/mbsys/ipshared/ec67/hdl" --include "../../../../../digitalesn.srcs/sources_1/new" \
+"../../../../../digitalesn.srcs/sources_1/reservoir_neuron.v" \
+"../../../../../digitalesn.srcs/sim_1/new/reservoir_neuron_tb.v" \
+
+# Do not sort compile order
+nosort

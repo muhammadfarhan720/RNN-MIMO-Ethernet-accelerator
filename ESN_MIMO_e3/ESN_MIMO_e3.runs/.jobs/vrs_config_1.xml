@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tfu_tanh_purelut_8_19_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/tfu_tanh_purelut_8_19_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dsp48_macro_typeB_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/dsp48_macro_typeB_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dsp48_macro_typeC_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/dsp48_macro_typeC_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="eth_sgmii_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/eth_sgmii_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="dsp48_macro_typeA_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/dsp48_macro_typeA_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="temac_synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/temac_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="tfu_tanh_purelut_8_19_synth_1"/>
+		<Parent Id="dsp48_macro_typeB_synth_1"/>
+		<Parent Id="dsp48_macro_typeC_synth_1"/>
+		<Parent Id="eth_sgmii_synth_1"/>
+		<Parent Id="dsp48_macro_typeA_synth_1"/>
+		<Parent Id="temac_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/chunxiao/Documents/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="tfu_tanh_purelut_8_19_synth_1"/>
+		<Parent Id="dsp48_macro_typeB_synth_1"/>
+		<Parent Id="dsp48_macro_typeC_synth_1"/>
+		<Parent Id="eth_sgmii_synth_1"/>
+		<Parent Id="dsp48_macro_typeA_synth_1"/>
+		<Parent Id="temac_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

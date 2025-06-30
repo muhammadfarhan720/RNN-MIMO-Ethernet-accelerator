@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="esn_core_sdrtb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="esn_core_sdrtb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="21000000001fs"></ZoomEndTime>
+      <Cursor1Time time="7486000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="115" />
+   <wave_markers>
+      <marker label="" time="5886000000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/conf_h2c_d">
+      <obj_property name="ElementShortName">conf_h2c_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_d[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/conf_c2h_d">
+      <obj_property name="ElementShortName">conf_c2h_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_c2h_d[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/conf_addr">
+      <obj_property name="ElementShortName">conf_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/conf_h2c_en">
+      <obj_property name="ElementShortName">conf_h2c_en</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/conf_c2h_en">
+      <obj_property name="ElementShortName">conf_c2h_en</obj_property>
+      <obj_property name="ObjectShortName">conf_c2h_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_rx_valid">
+      <obj_property name="ElementShortName">esn_rx_valid</obj_property>
+      <obj_property name="ObjectShortName">esn_rx_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_rx_data">
+      <obj_property name="ElementShortName">esn_rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">esn_rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_rx_read">
+      <obj_property name="ElementShortName">esn_rx_read</obj_property>
+      <obj_property name="ObjectShortName">esn_rx_read</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_rx_eof">
+      <obj_property name="ElementShortName">esn_rx_eof</obj_property>
+      <obj_property name="ObjectShortName">esn_rx_eof</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_tx_valid">
+      <obj_property name="ElementShortName">esn_tx_valid</obj_property>
+      <obj_property name="ObjectShortName">esn_tx_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_tx_data">
+      <obj_property name="ElementShortName">esn_tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">esn_tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_tx_eof">
+      <obj_property name="ElementShortName">esn_tx_eof</obj_property>
+      <obj_property name="ObjectShortName">esn_tx_eof</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/w_in">
+      <obj_property name="ElementShortName">w_in[0:7][0:39][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_in[0:7][0:39][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/w_x">
+      <obj_property name="ElementShortName">w_x[0:7][0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_x[0:7][0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/w_out">
+      <obj_property name="ElementShortName">w_out[0:3][0:47][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_out[0:3][0:47][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/y_out">
+      <obj_property name="ElementShortName">y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/dtmp">
+      <obj_property name="ElementShortName">dtmp[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dtmp[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/j">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/data_cnt">
+      <obj_property name="ElementShortName">data_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/ifile_w_in">
+      <obj_property name="ElementShortName">ifile_w_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifile_w_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/ifile_w_x">
+      <obj_property name="ElementShortName">ifile_w_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifile_w_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/ifile_w_out">
+      <obj_property name="ElementShortName">ifile_w_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifile_w_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/ifile_data_in">
+      <obj_property name="ElementShortName">ifile_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ifile_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/ofile_y_out">
+      <obj_property name="ElementShortName">ofile_y_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ofile_y_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/weights_ready">
+      <obj_property name="ElementShortName">weights_ready</obj_property>
+      <obj_property name="ObjectShortName">weights_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/output_byte_sw">
+      <obj_property name="ElementShortName">output_byte_sw[1:0]</obj_property>
+      <obj_property name="ObjectShortName">output_byte_sw[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider30" type="divider">
+      <obj_property name="label">esn_core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/conf_h2c_d">
+      <obj_property name="ElementShortName">conf_h2c_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_d[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/conf_c2h_d">
+      <obj_property name="ElementShortName">conf_c2h_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_c2h_d[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/conf_addr">
+      <obj_property name="ElementShortName">conf_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/conf_h2c_en">
+      <obj_property name="ElementShortName">conf_h2c_en</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/conf_c2h_en">
+      <obj_property name="ElementShortName">conf_c2h_en</obj_property>
+      <obj_property name="ObjectShortName">conf_c2h_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_valid">
+      <obj_property name="ElementShortName">rx_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_data">
+      <obj_property name="ElementShortName">rx_fifo_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_ready">
+      <obj_property name="ElementShortName">rx_fifo_ready</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_last">
+      <obj_property name="ElementShortName">rx_fifo_last</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_last</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_command">
+      <obj_property name="ElementShortName">udp_command</obj_property>
+      <obj_property name="ObjectShortName">udp_command</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_payload">
+      <obj_property name="ElementShortName">udp_payload</obj_property>
+      <obj_property name="ObjectShortName">udp_payload</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_valid">
+      <obj_property name="ElementShortName">tx_fifo_valid</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_data">
+      <obj_property name="ElementShortName">tx_fifo_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_ready">
+      <obj_property name="ElementShortName">tx_fifo_ready</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_last">
+      <obj_property name="ElementShortName">tx_fifo_last</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_last</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/bypass">
+      <obj_property name="ElementShortName">bypass</obj_property>
+      <obj_property name="ObjectShortName">bypass</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/data_buf_lb">
+      <obj_property name="ElementShortName">data_buf_lb[0:79][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buf_lb[0:79][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/conf_h2c_d_r">
+      <obj_property name="ElementShortName">conf_h2c_d_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_d_r[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/conf_addr_r">
+      <obj_property name="ElementShortName">conf_addr_r[9:0]</obj_property>
+      <obj_property name="ObjectShortName">conf_addr_r[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/conf_h2c_en_r">
+      <obj_property name="ElementShortName">conf_h2c_en_r</obj_property>
+      <obj_property name="ObjectShortName">conf_h2c_en_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/conf_c2h_en_r">
+      <obj_property name="ElementShortName">conf_c2h_en_r</obj_property>
+      <obj_property name="ObjectShortName">conf_c2h_en_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_config_enabled">
+      <obj_property name="ElementShortName">udp_config_enabled</obj_property>
+      <obj_property name="ObjectShortName">udp_config_enabled</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/udp_conf_addr">
+      <obj_property name="ElementShortName">udp_conf_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">udp_conf_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/udp_conf_data">
+      <obj_property name="ElementShortName">udp_conf_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">udp_conf_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_conf_data_valid">
+      <obj_property name="ElementShortName">udp_conf_data_valid</obj_property>
+      <obj_property name="ObjectShortName">udp_conf_data_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/w_in">
+      <obj_property name="ElementShortName">w_in[0:7][0:39][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_in[0:7][0:39][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/w_x">
+      <obj_property name="ElementShortName">w_x[0:7][0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_x[0:7][0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/w_out">
+      <obj_property name="ElementShortName">w_out[0:3][0:47][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_out[0:3][0:47][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/din_reg">
+      <obj_property name="ElementShortName">din_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_last_reg">
+      <obj_property name="ElementShortName">rx_fifo_last_reg</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_last_reg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/data_buf">
+      <obj_property name="ElementShortName">data_buf[0:39][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_buf[0:39][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/input_cnt">
+      <obj_property name="ElementShortName">input_cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">input_cnt[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/esn_start">
+      <obj_property name="ElementShortName">esn_start</obj_property>
+      <obj_property name="ObjectShortName">esn_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/esn_processing">
+      <obj_property name="ElementShortName">esn_processing</obj_property>
+      <obj_property name="ObjectShortName">esn_processing</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/esn_working">
+      <obj_property name="ElementShortName">esn_working</obj_property>
+      <obj_property name="ObjectShortName">esn_working</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/output_done">
+      <obj_property name="ElementShortName">output_done</obj_property>
+      <obj_property name="ObjectShortName">output_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/data_payload">
+      <obj_property name="ElementShortName">data_payload</obj_property>
+      <obj_property name="ObjectShortName">data_payload</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/input_cnt_lb">
+      <obj_property name="ElementShortName">input_cnt_lb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">input_cnt_lb[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/rx_fifo_last_reg_lb">
+      <obj_property name="ElementShortName">rx_fifo_last_reg_lb</obj_property>
+      <obj_property name="ObjectShortName">rx_fifo_last_reg_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/lb_working">
+      <obj_property name="ElementShortName">lb_working</obj_property>
+      <obj_property name="ObjectShortName">lb_working</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/lb_processing">
+      <obj_property name="ElementShortName">lb_processing</obj_property>
+      <obj_property name="ObjectShortName">lb_processing</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/out_processing">
+      <obj_property name="ElementShortName">out_processing</obj_property>
+      <obj_property name="ObjectShortName">out_processing</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/output_ready_lb">
+      <obj_property name="ElementShortName">output_ready_lb</obj_property>
+      <obj_property name="ObjectShortName">output_ready_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/output_done_lb">
+      <obj_property name="ElementShortName">output_done_lb</obj_property>
+      <obj_property name="ObjectShortName">output_done_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/Init">
+      <obj_property name="ElementShortName">Init</obj_property>
+      <obj_property name="ObjectShortName">Init</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/y_out_reg_lb">
+      <obj_property name="ElementShortName">y_out_reg_lb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out_reg_lb[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/output_cnt_lb">
+      <obj_property name="ElementShortName">output_cnt_lb[6:0]</obj_property>
+      <obj_property name="ObjectShortName">output_cnt_lb[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_valid_reg_lb">
+      <obj_property name="ElementShortName">tx_fifo_valid_reg_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_valid_reg_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_last_reg_lb">
+      <obj_property name="ElementShortName">tx_fifo_last_reg_lb</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_last_reg_lb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_cmd_rd_sw">
+      <obj_property name="ElementShortName">udp_cmd_rd_sw</obj_property>
+      <obj_property name="ObjectShortName">udp_cmd_rd_sw</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/udp_cmd_start">
+      <obj_property name="ElementShortName">udp_cmd_start</obj_property>
+      <obj_property name="ObjectShortName">udp_cmd_start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/udp_cmd_data">
+      <obj_property name="ElementShortName">udp_cmd_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">udp_cmd_data[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/upd_cmd_data_valid">
+      <obj_property name="ElementShortName">upd_cmd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">upd_cmd_data_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/udp_cmd_data_count">
+      <obj_property name="ElementShortName">udp_cmd_data_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">udp_cmd_data_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/rstate_reg">
+      <obj_property name="ElementShortName">rstate_reg[0:7][19:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate_reg[0:7][19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/rstate_new">
+      <obj_property name="ElementShortName">rstate_new[0:7][19:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate_new[0:7][19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/echoready">
+      <obj_property name="ElementShortName">echoready[3:0]</obj_property>
+      <obj_property name="ObjectShortName">echoready[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/w_ex">
+      <obj_property name="ElementShortName">w_ex[0:7][0:47][15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ex[0:7][0:47][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/rstate_ex">
+      <obj_property name="ElementShortName">rstate_ex[0:47][19:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate_ex[0:47][19:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/data_in">
+      <obj_property name="ElementShortName">data_in[0:39][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[0:39][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/statenext">
+      <obj_property name="ElementShortName">statenext[3:0]</obj_property>
+      <obj_property name="ObjectShortName">statenext[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/fsmcnt">
+      <obj_property name="ElementShortName">fsmcnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fsmcnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/fsmcntnext">
+      <obj_property name="ElementShortName">fsmcntnext[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fsmcntnext[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/reservoir_start">
+      <obj_property name="ElementShortName">reservoir_start</obj_property>
+      <obj_property name="ObjectShortName">reservoir_start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/output_ready">
+      <obj_property name="ElementShortName">output_ready[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_ready[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/y_out">
+      <obj_property name="ElementShortName">y_out[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/y_out_reg">
+      <obj_property name="ElementShortName">y_out_reg[0:14][7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_out_reg[0:14][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/output_cnt">
+      <obj_property name="ElementShortName">output_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/output_en">
+      <obj_property name="ElementShortName">output_en</obj_property>
+      <obj_property name="ObjectShortName">output_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_data_reg">
+      <obj_property name="ElementShortName">tx_fifo_data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_data_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_valid_reg">
+      <obj_property name="ElementShortName">tx_fifo_valid_reg</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_valid_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/esn_core_sdrtb/esn_core_inst/tx_fifo_last_reg">
+      <obj_property name="ElementShortName">tx_fifo_last_reg</obj_property>
+      <obj_property name="ObjectShortName">tx_fifo_last_reg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/out_cnt1">
+      <obj_property name="ElementShortName">out_cnt1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_cnt1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/out_cnt2">
+      <obj_property name="ElementShortName">out_cnt2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_cnt2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/NUM_INPUTS">
+      <obj_property name="ElementShortName">NUM_INPUTS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_INPUTS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/NUM_NEURONS">
+      <obj_property name="ElementShortName">NUM_NEURONS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_NEURONS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/NUM_OUTPUTS">
+      <obj_property name="ElementShortName">NUM_OUTPUTS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_OUTPUTS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/WEIGHT_WIDTH">
+      <obj_property name="ElementShortName">WEIGHT_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WEIGHT_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/STATE_WIDTH">
+      <obj_property name="ElementShortName">STATE_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/IDLE">
+      <obj_property name="ElementShortName">IDLE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/esn_core_sdrtb/esn_core_inst/RUN">
+      <obj_property name="ElementShortName">RUN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RUN[3:0]</obj_property>
+   </wvobject>
+</wave_config>

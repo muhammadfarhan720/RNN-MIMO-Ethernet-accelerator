@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010iclg225-1L" LaunchTime="1685826134">
+  <File Type="PA-TCL" Name="digitalesn_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="digitalesn_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="digitalesn_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="digitalesn_top.vds"/>
+  <File Type="RDS-UTIL" Name="digitalesn_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="digitalesn_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="digitalesn_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="digitalesn_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="digitalesn_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/eth_gmii_temac_design.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/eth_gmii_temac_design.v"/>
+        <Attr Name="ImportTime" Val="1593438147"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/eth_sgmii/eth_sgmii_clocking.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/eth_sgmii/eth_sgmii_clocking.v"/>
+        <Attr Name="ImportTime" Val="1571080247"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/eth_sgmii/eth_sgmii_gt_common.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/eth_sgmii/eth_sgmii_gt_common.v"/>
+        <Attr Name="ImportTime" Val="1571260262"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/eth_sgmii/eth_sgmii_resets.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/eth_sgmii/eth_sgmii_resets.v"/>
+        <Attr Name="ImportTime" Val="1571080247"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/eth_sgmii/eth_sgmii_support.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/eth_sgmii/eth_sgmii_support.v"/>
+        <Attr Name="ImportTime" Val="1571778855"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/misc/led_intf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/misc/led_intf.v"/>
+        <Attr Name="ImportTime" Val="1571248147"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/uart/sasc_brg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/uart/sasc_brg.v"/>
+        <Attr Name="ImportTime" Val="1163137140"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/uart/sasc_fifo8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/uart/sasc_fifo8.v"/>
+        <Attr Name="ImportTime" Val="1590517155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/uart/sasc_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/uart/sasc_top.v"/>
+        <Attr Name="ImportTime" Val="1590517176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/sync_block_ex.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/sync_block_ex.v"/>
+        <Attr Name="ImportTime" Val="1571086211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_address_swap.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_address_swap.v"/>
+        <Attr Name="ImportTime" Val="1582410666"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_bram_tdp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_bram_tdp.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_config_vector_sm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_config_vector_sm.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_fifo_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_fifo_block.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_reset_sync.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_reset_sync.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_resets.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_resets.v"/>
+        <Attr Name="ImportTime" Val="1571170876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_rx_client_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_rx_client_fifo.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_stats.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_stats.v"/>
+        <Attr Name="ImportTime" Val="1571086259"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_support.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_support.v"/>
+        <Attr Name="ImportTime" Val="1570569398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_sync_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_sync_block.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_ten_100_1g_eth_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_ten_100_1g_eth_fifo.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_tx_client_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_tx_client_fifo.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/uart/uart_intf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/uart/uart_intf.v"/>
+        <Attr Name="ImportTime" Val="1590517116"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/dsp_array.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/dsp_array.v"/>
+        <Attr Name="ImportTime" Val="1593239427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/dual_reservoir_neuron.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/dual_reservoir_neuron.v"/>
+        <Attr Name="ImportTime" Val="1593813895"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/esn_core.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/esn_core.v"/>
+        <Attr Name="ImportTime" Val="1593831857"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/loadweights.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/loadweights.v"/>
+        <Attr Name="ImportTime" Val="1593811213"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/output_neuron_dsp.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/output_neuron_dsp.v"/>
+        <Attr Name="ImportTime" Val="1593815775"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/return_conf.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/return_conf.v"/>
+        <Attr Name="ImportTime" Val="1592152814"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/digitalesn_top.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/new/digitalesn_top.v"/>
+        <Attr Name="ImportTime" Val="1593431670"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/reset_sync_ex.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/reset_sync_ex.v"/>
+        <Attr Name="ImportTime" Val="1571086126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_axi_mux.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_axi_mux.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_axi_pat_check.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_axi_pat_check.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_axi_pat_gen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_axi_pat_gen.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_axi_pipe.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_axi_pipe.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_basic_pat_gen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_basic_pat_gen.v"/>
+        <Attr Name="ImportTime" Val="1570569399"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_example_design_clocks.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_example_design_clocks.v"/>
+        <Attr Name="ImportTime" Val="1571847932"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_example_design_resets.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_example_design_resets.v"/>
+        <Attr Name="ImportTime" Val="1571847932"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/temac/temac_frame_typ.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/sources_1/temac/temac_frame_typ.v"/>
+        <Attr Name="ImportTime" Val="1571847933"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/digitalesn/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../ESN_editions_ISQED/ESN-SD/digitalesn/archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1593834300"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="digitalesn_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/digitalesn_clocks.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/constrs_1/digitalesn_clocks.xdc"/>
+        <Attr Name="ImportTime" Val="1592268894"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/digitalesn_pins.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/XilinxProjects/digitalesn/digitalesn.srcs/constrs_1/digitalesn_pins.xdc"/>
+        <Attr Name="ImportTime" Val="1592156787"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="tfu_tanh_purelut_8_19"/>
+  <BlockFileSet Type="BlockSrcs" Name="eth_sgmii"/>
+  <BlockFileSet Type="BlockSrcs" Name="dsp48_macro_typeB"/>
+  <BlockFileSet Type="BlockSrcs" Name="dsp48_macro_typeC"/>
+  <BlockFileSet Type="BlockSrcs" Name="dsp48_macro_typeA"/>
+  <BlockFileSet Type="BlockSrcs" Name="temac"/>
+</GenRun>

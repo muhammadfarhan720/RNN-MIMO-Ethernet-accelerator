@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../ESN_test1.srcs/sources_1/ip/dsp48_macro_typeA/sim/dsp48_macro_typeA.vhd" \
+
+nosort

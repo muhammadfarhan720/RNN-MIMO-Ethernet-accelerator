@@ -2,13 +2,14 @@
 # Vivado v2019.2.1 (64-bit)
 # SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
 # IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
-# Start of session at: Fri Dec  6 22:41:22 2024
-# Process ID: 79604
-# Current directory: C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent99164 C:\Users\azmin\Desktop\ESN_MIMO\ESN_MIMO_e3\ESN_MIMO_e3.xpr
-# Log file: C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/vivado.log
-# Journal file: C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3\vivado.jou
+# Start of session at: Thu Jul  3 06:29:29 2025
+# Process ID: 26532
+# Current directory: C:/Users/azmin/Desktop/Github_projects/RNN-MIMO-Ethernet-accelerator/ESN_MIMO_e3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11076 C:\Users\azmin\Desktop\Github_projects\RNN-MIMO-Ethernet-accelerator\ESN_MIMO_e3\ESN_MIMO_e3.xpr
+# Log file: C:/Users/azmin/Desktop/Github_projects/RNN-MIMO-Ethernet-accelerator/ESN_MIMO_e3/vivado.log
+# Journal file: C:/Users/azmin/Desktop/Github_projects/RNN-MIMO-Ethernet-accelerator/ESN_MIMO_e3\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/azmin/Desktop/Github_projects/RNN-MIMO-Ethernet-accelerator/ESN_MIMO_e3/ESN_MIMO_e3.xpr
 open_project C:/Users/azmin/Desktop/ESN_MIMO/ESN_MIMO_e3/ESN_MIMO_e3.xpr
 update_compile_order -fileset sources_1

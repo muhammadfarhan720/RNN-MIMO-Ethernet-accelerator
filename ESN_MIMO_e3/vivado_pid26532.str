@@ -258,3 +258,7 @@ collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digitalesn_top (digitalesn_top.v), eth_sgmii_temac_inst : eth_gmii_temac_design (eth_gmii_temac_design.v)]", 2, true); // B (F, cr) - Node
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digitalesn_top (digitalesn_top.v), eth_sgmii_temac_inst : eth_gmii_temac_design (eth_gmii_temac_design.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
 expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digitalesn_top (digitalesn_top.v), eth_sgmii_temac_inst : eth_gmii_temac_design (eth_gmii_temac_design.v)]", 2); // B (F, cr)
+// Elapsed time: 661 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, digitalesn_top (digitalesn_top.v), eth_sgmii_temac_inst : eth_gmii_temac_design (eth_gmii_temac_design.v), uart_intf : uart_intf (uart_intf.v)]", 9); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 906 MB. GUI used memory: 97 MB. Current time: 7/3/25, 7:02:08 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 906 MB. GUI used memory: 92 MB. Current time: 7/3/25, 7:32:09 AM EDT

@@ -1,23 +1,4 @@
 `timescale 1ns / 1ns
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Victor Gan
-// 
-// Create Date: 06/27/2020 11:04:05 AM
-// Design Name: 
-// Module Name: esn_core
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments: 
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 
 module esn_core

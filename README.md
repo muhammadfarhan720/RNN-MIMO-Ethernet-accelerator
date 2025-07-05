@@ -32,7 +32,7 @@ This project contains design architecture similar to the following research pape
 
 ```mermaid
 graph LR
-    A[Ethernet PHY] -->|125MHz| B(TEMAC Interface)
+    A[Ethernet PHY] --> B(TEMAC Interface)
     B --> C[AXI-Stream FIFO]
     C --> D[ESN Core]
     E[UART] -->|Weights| D

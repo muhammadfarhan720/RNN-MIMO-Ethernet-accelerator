@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:  MICS
-// Engineer: Victor Gan
-// 
-// Create Date: 06/25/2020 1:21:00 AM
-// Design Name: 
-// Module Name: dsp_array
-// Project Name: Digital ESN
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module dsp_array (
    input    clk,  // ESN clock 

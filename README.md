@@ -10,7 +10,7 @@ This project contains design architecture similar to the following research pape
 
 - [Leveraging neuro-inspired AI accelerator for high-speed computing in 6G networks](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2024.1345644/full) – Published in *Frontiers in Computational Neuroscience*, 2024.
 
-- [Accelerating next-g wireless communications with fpga-based ai accelerators](https://ieeexplore.ieee.org/abstract/document/10323918) – Published in *IEEE*, 2024.
+- [Accelerating next-g wireless communications with fpga-based ai accelerators](https://ieeexplore.ieee.org/abstract/document/10323918) – Published in *2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD)*, 2024.
 
 
 # Folder Contents :

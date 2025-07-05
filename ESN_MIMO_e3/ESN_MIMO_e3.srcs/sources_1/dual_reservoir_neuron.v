@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:  MICS
-// Engineer: Victor Gan
-// 
-// Create Date: 06/25/2020 2:16:00 AM
-// Design Name: 
-// Module Name: dual_reservoir_neuron
-// Project Name: Digital ESN
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 // ---- INSTANTIATION TEMPLATE ---- //
 // ---------------------------------//

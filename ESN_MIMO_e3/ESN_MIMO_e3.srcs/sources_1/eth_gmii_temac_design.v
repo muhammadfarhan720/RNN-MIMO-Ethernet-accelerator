@@ -1,27 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: MICS, ECE, Virginia Tech
-// Engineer: Donald Liang
-// 
-// Create Date: 10/13/2019 03:37:20 PM
-// Design Name: 
-// Module Name: eth_gmii_temac_design
-// Project Name: ICP Demo 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.02 - Modify clock I/O for digitalesn
-// Comments: Victor. 06/13/2020. Change the differential clock inputs to a global
-//           buffered single-ended clock.
-//
-// Revision 0.01 - File Created
-// Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 
 module eth_gmii_temac_design(

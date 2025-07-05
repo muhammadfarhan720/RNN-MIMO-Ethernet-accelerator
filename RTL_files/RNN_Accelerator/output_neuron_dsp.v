@@ -1,23 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:  MICS
-// Engineer: Victor Gan
-// 
-// Create Date: 06/27/2020 11:23:00 AM
-// Design Name: 
-// Module Name: output_neuron_dsp
-// Project Name: Digital ESN
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments: Rewritten using dsp_array, but not MULTADD macro
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module output_neuron_dsp (
    input    clk,                            // ESN clock (125MHz Ethernet clock)

@@ -27,11 +27,14 @@ This project contains design architecture similar to the following research pape
 
   --> Ethernet_UART_Interface : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
 
+
+# Key Features
+
 ```mermaid
 graph LR
     A[Ethernet PHY] -->|125MHz| B(TEMAC Interface)
     B --> C[AXI-Stream FIFO]
-    C -->|CDC| D[200MHz ESN Core]
+    C --> D[ESN Core]
     E[UART] -->|Weights| D
     D -->|Results| C
     C --> B

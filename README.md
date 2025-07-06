@@ -26,7 +26,7 @@ This project contains design architecture similar to the following research pape
 
 - **ESN_MIMO_python** : This folder contains the RNN accelerator python software code which is used to train the network on MIMO symbol detection datasets and extract the trained parameters to hardcode them on the FPGA RNN inference chip RTL.
 
-- **Matlab_UDP_transfer** : The matlab scripts required to send the dataset inputs and receive predicted symbol values using Ethernet as well as load the python trained weights (through UART) using UDP transfer protocol.
+- **Matlab_UDP_transfer** : The matlab scripts required to send the dataset inputs and receive predicted symbol values using Ethernet-UDP payload. Also, to load the python trained weights to the RNN weight memories through UART protocol.
 
 
 

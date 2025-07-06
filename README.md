@@ -75,7 +75,7 @@ graph LR
     S --> |Input Bytes| D[ESN Core]
     E[UART] -->|Weights| D
     D -->|Return Weights Testing| E
-    D -->|Result Bytes| C
+    D -->|Result Bytes TX| C
     C --> B
 ```
 

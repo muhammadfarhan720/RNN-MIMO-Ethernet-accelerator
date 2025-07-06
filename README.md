@@ -69,6 +69,7 @@ Key Features 2
 ```mermaid
 graph LR
     A[Ethernet PHY] --> B(TEMAC Interface)
+    B(TEMAC Interface) --> A[Ethernet PHY]
     B --> C[AXI-Stream FIFO]
     C --> D[ESN Core]
     E[UART] -->|Weights| D

@@ -128,7 +128,7 @@ module esn_core
    reg [7:0]                   din_reg;                        // data input register
    reg                         rx_fifo_last_reg;  			   // rx_fifo_last register
    reg [DATA_WIDTH-1:0]        data_buf[0:NUM_INPUTS-1];       // buffer register
-   reg [$clog2(NUM_INPUTS):0]  input_cnt;                      // input byte counter 4 x 16 bits (8 bytes) 
+   reg [$clog2(NUM_INPUTS):0]  input_cnt;                      // input byte counter 40 x 16 bits  (80 byytes)
    reg                         esn_start;                      // ESN start signal
    reg                         esn_processing;                 // ESN core processing
    wire                        esn_working;                    // ESN input/output/processing

@@ -72,7 +72,7 @@ stateDiagram-v2
         - input_cnt[4:1]: Neuron index (0-39)
         - esn_start: Trigger when input_cnt==79
     end note
-
+```
 
 Key Features 2
 

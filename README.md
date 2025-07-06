@@ -73,7 +73,7 @@ graph LR
     B --> C[AXI-Stream FIFO]
     C --> |Input Bytes| D[ESN Core]
     E[UART] -->|Weights| D
-    D [Return config UART testing] --> |Return Weights| E
+    D[Return config UART testing] -->|Return Weights| E
     D -->|Result Bytes| C
     C --> B
 ```

@@ -30,49 +30,39 @@ This project contains design architecture similar to the following research pape
 
 # Key Features
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffd8d8', 'edgeLabelBackground':'#ffffff'}}}%%
-stateDiagram-v2
-    direction LR
-    [*] --> Ethernet_PHY
-    Ethernet_PHY --> TEMAC_Interface: 125MHz\n8-bit AXI-Stream
-    state TEMAC_Interface {
-        direction LR
-        RX_FIFO --> CDC_Sync: rx_fifo_data[7:0]\nrx_fifo_valid
-        CDC_Sync --> Ping_Pong_Ctrl: Synchronized\n200MHz domain
-    }
-    
-    state Ping_Pong_Ctrl {
-        direction TB
-        state "Byte Assembly" as byte_asm {
-            [*] --> Even_Byte
-            Even_Byte --> Odd_Byte: Store LSB (din_reg)
-            Odd_Byte --> Word_Ready: Store MSB\n{rx_fifo_data, din_reg}
-        }
-        Word_Ready --> Buffer_Select: 16-bit word\n(input_cnt[4:1])
+sequenceDiagram
+    participant HostPC
+    participant Ethernet_PHY
+    participant RX_FIFO
+    participant Byte_Assembly
+    participant Ping_Pong_Ctrl
+    participant Data_Buf
+    participant ESN_Core
+
+    Note over HostPC,ESN_Core: 40 Neurons × 2 Bytes = 80 Byte Transfer
+    HostPC->>Ethernet_PHY: Byte Stream (LSB first)
+    Ethernet_PHY->>RX_FIFO: rx_fifo_data[7:0]
+    RX_FIFO->>Byte_Assembly: Valid Byte (rx_fifo_valid)
+
+    loop For Each 16-bit Word
+        Byte_Assembly->>Byte_Assembly: din_reg = current_byte (LSB)
+        Byte_Assembly->>Byte_Assembly: Wait for next byte (MSB)
+        Byte_Assembly->>Ping_Pong_Ctrl: {MSB, LSB} (16-bit word)
+        Ping_Pong_Ctrl->>Ping_Pong_Ctrl: input_cnt[4:1] = neuron index (0-39)
         
-        state Buffer_Select {
-            [*] --> Ping_Buffer: Active (0-19)
-            Ping_Buffer --> Pong_Buffer: On input_cnt[0]\n(20-39)
-            Pong_Buffer --> Ping_Buffer: Toggle every\n20 words
-        }
-    }
+        alt input_cnt[0] == 0 (Even Index)
+            Ping_Pong_Ctrl->>Data_Buf: Store in Ping region (neurons 0-19)
+        else input_cnt[0] == 1 (Odd Index)
+            Ping_Pong_Ctrl->>Data_Buf: Store in Pong region (neurons 20-39)
+        end
+        
+        Ping_Pong_Ctrl->>Ping_Pong_Ctrl: Increment input_cnt
+    end
     
-    Ping_Pong_Ctrl --> ESN_Core: 40x16-bit\nparallel load
-    state ESN_Core {
-        direction LR
-        Neuron_Array --> MAC_Units: w_in[0:39]\n× rstate_ex
-        MAC_Units --> Tanh_Activation: 20-bit SOP
-        Tanh_Activation --> rstate_new: Updated states
-    }
-    
-    note right of Ping_Pong_Ctrl
-        **Key Control Signals:**
-        - input_cnt[0]: Ping/Pong select
-        - input_cnt[4:1]: Neuron index (0-39)
-        - esn_start: Trigger when input_cnt==79
-    end note
-```
+    Note right of Ping_Pong_Ctrl: After 80 bytes (input_cnt==79)
+    Ping_Pong_Ctrl->>ESN_Core: esn_start = 1
+    ESN_Core->>Data_Buf: Parallel load all 40 neurons
+    ESN_Core->>ESN_Core: MAC → Tanh → rstate_new
 
 Key Features 2
 

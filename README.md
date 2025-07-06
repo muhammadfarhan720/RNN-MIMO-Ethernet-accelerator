@@ -63,7 +63,7 @@ sequenceDiagram
     Ping_Pong_Ctrl->>ESN_Core: esn_start = 1
     ESN_Core->>Data_Buf: Parallel load all 40 neurons
     ESN_Core->>ESN_Core: MAC → Tanh → rstate_new
-
+```
 Key Features 2
 
 ```mermaid
@@ -74,6 +74,6 @@ graph LR
     E[UART] -->|Weights| D
     D -->|Results| C
     C --> B
-
+```
 
 

@@ -21,9 +21,9 @@ This project contains design architecture similar to the following research pape
 
 - **Matlab_UDP_transfer** : The matlab scripts required to send the dataset inputs and receive predicted symbol values using Ethernet as well as load the python trained weights (through UART) using UDP transfer protocol.
 
-- **RTL_files **: This folder contains two following subfolders :
+- **RTL_files**: This folder contains two following subfolders :
 
-  --> **RNN_Accelerator **: The source files for the RNN accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
+  --> **RNN_Accelerator**: The source files for the RNN accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
 
   --> **Ethernet_UART_Interface** : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
 

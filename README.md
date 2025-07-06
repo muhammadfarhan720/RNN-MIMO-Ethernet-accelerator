@@ -71,7 +71,8 @@ graph LR
     A[Ethernet PHY] --> B(TEMAC Interface)
     B(TEMAC Interface) --> A[Ethernet PHY]
     B --> C[AXI-Stream FIFO]
-    C --> |Input Bytes| D[ESN Core]
+    C --> |RX data| S[Address Swap]
+    S --> |Input Bytes| D[ESN Core]
     E[UART] -->|Weights| D
     D -->|Return Weights Testing| E
     D -->|Result Bytes| C

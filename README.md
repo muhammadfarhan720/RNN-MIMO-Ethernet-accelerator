@@ -15,17 +15,17 @@ This project contains design architecture similar to the following research pape
 
 # Folder Contents :
 
-- ESN_MIMO_e3 : This folder contains the RTL implementation and the project archive in vivado format (.xpr) for the RNN accelerator and it's establishment of data communication with host PC through Ethernet and UART protocol using TEMAC Ethernet IP wrapper and UART HDL wrappers respectively.
+- **ESN_MIMO_e3** : This folder contains the RTL implementation and the project archive in vivado format (.xpr) for the RNN accelerator and it's establishment of data communication with host PC through Ethernet and UART protocol using TEMAC Ethernet IP wrapper and UART HDL wrappers respectively.
 
-- ESN_MIMO_python : This folder contains the RNN accelerator python software code which is used to train the network on MIMO symbol detection datasets and extract the trained parameters to hardcode them on the FPGA RNN inference chip RTL.
+- **ESN_MIMO_python** : This folder contains the RNN accelerator python software code which is used to train the network on MIMO symbol detection datasets and extract the trained parameters to hardcode them on the FPGA RNN inference chip RTL.
 
-- Matlab_UDP_transfer : The matlab scripts required to send the dataset inputs and receive predicted symbol values using Ethernet as well as load the python trained weights (through UART) using UDP transfer protocol.
+- **Matlab_UDP_transfer** : The matlab scripts required to send the dataset inputs and receive predicted symbol values using Ethernet as well as load the python trained weights (through UART) using UDP transfer protocol.
 
-- RTL_files : This folder contains two following subfolders :
+- **RTL_files **: This folder contains two following subfolders :
 
-  --> RNN_Accelerator : The source files for the RNN accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
+  --> **RNN_Accelerator **: The source files for the RNN accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
 
-  --> Ethernet_UART_Interface : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
+  --> **Ethernet_UART_Interface** : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
 
 
 # Key Features

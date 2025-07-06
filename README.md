@@ -30,6 +30,7 @@ This project contains design architecture similar to the following research pape
 
 # Key Features
 
+```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffd8d8', 'edgeLabelBackground':'#ffffff'}}}%%
 stateDiagram-v2
     direction LR

@@ -30,6 +30,51 @@ This project contains design architecture similar to the following research pape
 
 # Key Features
 
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffd8d8', 'edgeLabelBackground':'#ffffff'}}}%%
+stateDiagram-v2
+    direction LR
+    [*] --> Ethernet_PHY
+    Ethernet_PHY --> TEMAC_Interface: 125MHz\n8-bit AXI-Stream
+    state TEMAC_Interface {
+        direction LR
+        RX_FIFO --> CDC_Sync: rx_fifo_data[7:0]\nrx_fifo_valid
+        CDC_Sync --> Ping_Pong_Ctrl: Synchronized\n200MHz domain
+    }
+    
+    state Ping_Pong_Ctrl {
+        direction TB
+        state "Byte Assembly" as byte_asm {
+            [*] --> Even_Byte
+            Even_Byte --> Odd_Byte: Store LSB (din_reg)
+            Odd_Byte --> Word_Ready: Store MSB\n{rx_fifo_data, din_reg}
+        }
+        Word_Ready --> Buffer_Select: 16-bit word\n(input_cnt[4:1])
+        
+        state Buffer_Select {
+            [*] --> Ping_Buffer: Active (0-19)
+            Ping_Buffer --> Pong_Buffer: On input_cnt[0]\n(20-39)
+            Pong_Buffer --> Ping_Buffer: Toggle every\n20 words
+        }
+    }
+    
+    Ping_Pong_Ctrl --> ESN_Core: 40x16-bit\nparallel load
+    state ESN_Core {
+        direction LR
+        Neuron_Array --> MAC_Units: w_in[0:39]\n× rstate_ex
+        MAC_Units --> Tanh_Activation: 20-bit SOP
+        Tanh_Activation --> rstate_new: Updated states
+    }
+    
+    note right of Ping_Pong_Ctrl
+        **Key Control Signals:**
+        - input_cnt[0]: Ping/Pong select
+        - input_cnt[4:1]: Neuron index (0-39)
+        - esn_start: Trigger when input_cnt==79
+    end note
+
+
+
+
 ```mermaid
 graph LR
     A[Ethernet PHY] --> B(TEMAC Interface)

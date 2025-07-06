@@ -29,7 +29,7 @@ This project contains design architecture similar to the following research pape
 
 
 # Key Features
-
+```mermaid
 sequenceDiagram
     participant HostPC
     participant Ethernet_PHY

@@ -66,7 +66,9 @@ sequenceDiagram
     ESN_Core->>Data_Buf: Parallel load all 40 neurons
     ESN_Core->>ESN_Core: MAC → Tanh → rstate_new
 ```
-Key Features 2
+(On board RTL implementation for UART driver and Ethernet communication)
+
+
 
 ```mermaid
 graph LR

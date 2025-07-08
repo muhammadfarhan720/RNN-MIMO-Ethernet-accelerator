@@ -74,7 +74,7 @@ sequenceDiagram
    1. Ethernet PHY from  sends the dataframe including {DA, SA, Data} format from "eth_sgmii_support" module through the AXI RX-FIFO from the "temac_fifo_block" module to the module named "temac_address_swap"
    2. The "temac_address_swap"  generates "udp_payload" signal when data passes through frame which is used by accelerator "esn_core.v" to strip the data from the frame excluding "DA/SA" and only process the data
    3. The generated predicted values are passed back to AXI TX-FIFO to Ethernet PHY gmii_txd port to receive the host PC.
-   4. The matlab script retrieves the output by opening UDP port from the FPGA PL side.   
+   4. The matlab script retrieves the output by opening UDP port from the host PC side.   
 
 ```mermaid
 graph LR

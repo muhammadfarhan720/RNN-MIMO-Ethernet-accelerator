@@ -67,6 +67,7 @@ sequenceDiagram
     ESN_Core->>ESN_Core: MAC → Tanh → rstate_new
 ```
 (On board RTL implementation for UART driver and Ethernet communication between FPGA and Host PC)
+
 -- **"digitalesn_top.v"** is the top module port of the entire Accelerator + Ethernet/UART UDP configuration
 -- The trained weight parameter files are loaded through **"loadweights"** module to the accelerator **"esn_core.v"** and returned back to PC through **"return_conf"** module to confirm on-board reading
 -- The **"eth_gmii_temac_design.v"** is the top file for the TEMAC Ethernet- PHY interfacing to send MIMO Wi-Fi channel frame data from host to FPGA and collected predicted RC Symbols back to host using the following procedure :

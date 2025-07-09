@@ -68,11 +68,11 @@ sequenceDiagram
 ```
 (On board RTL implementation for UART driver and Ethernet communication between FPGA and Host PC)
 
--- The trained weight parameter files are loaded through "loadweights" module to the accelerator "esn_core.v" and returned back to PC through "return_conf" to confirm on-board reading
--- The "eth_gmii_temac_design.v" is the top file for the TEMAC Ethernet- PHY interfacing to send MIMO Wi-Fi channel frame data from host to FPGA and collected predicted RC Symbols back to host using the following procedure :
+-- The trained weight parameter files are loaded through **"loadweights"** module to the accelerator **"esn_core.v"** and returned back to PC through **"return_conf"** to confirm on-board reading
+-- The **"eth_gmii_temac_design.v"** is the top file for the TEMAC Ethernet- PHY interfacing to send MIMO Wi-Fi channel frame data from host to FPGA and collected predicted RC Symbols back to host using the following procedure :
 
-   1. Ethernet PHY of TEMAC IP transfers the dataframe send from matlab script including {DA, SA, Data} format from "eth_sgmii_support" module through the AXI RX-FIFO from the "temac_fifo_block" module to the module named "temac_address_swap"
-   2. The "temac_address_swap"  generates "udp_payload" signal when data passes through frame which is used by accelerator "esn_core.v" to strip the data from the frame excluding "DA/SA" and only process the data
+   1. Ethernet PHY of TEMAC IP transfers the dataframe send from matlab script including {DA, SA, Data} format from **"eth_sgmii_support"** module through the AXI RX-FIFO from the **"temac_fifo_block"** module to the module named **"temac_address_swap"**
+   2. The **"temac_address_swap"**  generates **"udp_payload"** signal when data passes through frame which is used by accelerator **"esn_core.v"** to strip the data from the frame excluding "DA/SA" and only process the data
    3. The generated predicted values are passed back to AXI TX-FIFO to Ethernet PHY gmii_txd port to receive the host PC.
    4. The matlab script retrieves the output by opening UDP port from the host PC side.   
 

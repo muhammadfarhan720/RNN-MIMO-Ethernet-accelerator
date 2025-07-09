@@ -66,6 +66,8 @@ sequenceDiagram
     ESN_Core->>Data_Buf: Parallel load all 40 neurons
     ESN_Core->>ESN_Core: MAC → Tanh → rstate_new
 ```
+## Key Feature 2: UART + Ethernet Communication Pipeline
+
 (On board RTL implementation for UART driver and Ethernet communication between FPGA and Host PC)
 
 -- **"digitalesn_top.v"** is the top module port of the entire Accelerator + Ethernet/UART UDP configuration

@@ -70,16 +70,26 @@ sequenceDiagram
 
 (On board RTL implementation for UART driver and Ethernet communication between FPGA and Host PC)
 
--- **"digitalesn_top.v"** is the top module port of the entire Accelerator + Ethernet/UART UDP configuration
+- **`digitalesn_top.v`** is the top module that integrates the **ESN accelerator**, **UART control logic**, and **Ethernet/UDP configuration** for host–FPGA interaction.
 
--- The trained weight parameter files are loaded through **"loadweights"** module to the accelerator **"esn_core.v"** and returned back to PC through **"return_conf"** module to confirm on-board reading
+- The trained weight parameter files are:
+  - Loaded through the **`loadweights`** module into the accelerator (**`esn_core.v`**),
+  - Then returned back to the host PC via the **`return_conf`** module, confirming successful on-board memory write.
+ 
+    
+- **`eth_gmii_temac_design.v`** is the top-level RTL for interfacing with the **TEMAC Ethernet PHY**.
+  
+  It handles bidirectional communication of Wi-Fi channel data and prediction results using the following procedure:
 
--- The **"eth_gmii_temac_design.v"** is the top file for the TEMAC Ethernet- PHY interfacing to send MIMO Wi-Fi channel frame data from host to FPGA and collected predicted RC Symbols back to host using the following procedure :
+  1. **Ethernet PHY (TEMAC IP)** receives UDP dataframes from the host (e.g., MATLAB script) formatted as `{DA, SA, Data}`.
+     These frames are passed from the **`eth_sgmii_support`** module to the **AXI RX-FIFO** provided by the **`temac_fifo_block`** module wrapper.
 
-   1. Ethernet PHY of TEMAC IP transfers the dataframe send from matlab script including {DA, SA, Data} format from **"eth_sgmii_support"** module through the AXI RX-FIFO from the **"temac_fifo_block"** module to the module named **"temac_address_swap"**
-   2. The **"temac_address_swap"**  module generates **"udp_payload"** signal when data passes through frame which is used by accelerator **"esn_core.v"** to strip the data from the frame excluding "DA/SA" and only process the data
-   3. The generated predicted values are passed back to AXI TX-FIFO to Ethernet PHY gmii_txd port to receive the host PC.
-   4. The matlab script retrieves the output by opening UDP port from the host PC side.   
+  2. The **`temac_address_swap`** module detects frame boundaries and generates a **`udp_payload`** signal.
+     This signal identifies valid payload data for the **`esn_core.v`** accelerator, stripping out DA/SA headers.
+
+  3. After processing, the predicted RC symbol values are written back to the **AXI TX-FIFO**, connected to the **TEMAC GMII TX (`gmii_txd`)** interface for transmission back to the host PC.
+
+  4. The host (e.g., MATLAB) opens a predefined UDP port to receive and verify predicted results from the FPGA.
 
 ```mermaid
 graph LR

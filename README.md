@@ -46,7 +46,7 @@ This project contains design architecture similar to the following research pape
 
 - This alternating write scheme allows continuous, conflict-free buffering while maintaining **data alignment** for parallel RNN loading.
 - Once **all 40 neuron inputs (80 bytes)** are received, the control logic asserts **`esn_start = 1`**, enabling a **parallel load** of the full input set into the RNN.
-- The RNN then performs **MAC operations followed by tanh activation**, generating updated neuron states.
+- The RNN then performs **MAC operations followed by tanh activation**, generating inference output for predicted symbols.
 
 ```mermaid
 sequenceDiagram

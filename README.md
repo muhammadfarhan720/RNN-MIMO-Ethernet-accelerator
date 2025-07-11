@@ -32,7 +32,17 @@ This project contains design architecture similar to the following research pape
 
 # Key Features
 
-## Data-loading with Ping-Pong buffer
+## Key Feature 1: Data-loading with Ping-Pong buffer
+
+(Using Ping-Pong buffer for seamless data loading to 40 input neurons of RNN network in parallel)
+
+-**`esn_core.v`** contains the top level module with glue logic for instatntiated submodule for the RNN accelerator
+- The RNN input has 40 neurons with each neuron taking 16 bit of data
+- The 40 input datas have to be laoded in parallel to RNN at a clock edge
+- The AXI FIFOs can only send 1 Byte of data at a clock edge
+- A Ping-Pong data buffer is used to load all the 40 input neuron in a odd-even indexing mechanism 
+- Once the data buffer is filled with 40 input data, the esn_start=1 and data is loaded to RNN parallelwise
+
 
 ```mermaid
 sequenceDiagram

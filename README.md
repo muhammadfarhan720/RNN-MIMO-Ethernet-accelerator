@@ -31,6 +31,9 @@ This project contains design architecture similar to the following research pape
 
 
 # Key Features
+
+## Data-loading with Ping-Pong buffer
+
 ```mermaid
 sequenceDiagram
     participant HostPC

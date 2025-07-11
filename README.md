@@ -39,10 +39,10 @@ This project contains design architecture similar to the following research pape
 - **`esn_core.v`** serves as the top-level module integrating control logic and instantiated submodules for the RNN accelerator.
 - The RNN accepts **40 input neurons**, each requiring **16-bit input data** per cycle.
 - Since the input arrives as an **8-bit AXI4-Stream byte stream**, every **two bytes are assembled into one 16-bit word**.
-- A **Ping-Pong buffer mechanism** is implemented to store the incoming data:
+- A **Ping-Pong buffer mechanism** is implemented to store the incoming data after concatening 2 bytes to word format:
   
-  - **Even-indexed neurons (0–19)** are stored in the **Ping** buffer.
-  - **Odd-indexed neurons (20–39)** are stored in the **Pong** buffer.
+  - **Even-indexed neurons (0–19) ** input data words are stored in the **Ping** buffer.
+  - **Odd-indexed neurons (20–39)** input data words are stored in the **Pong** buffer.
 
 - This alternating write scheme allows continuous, conflict-free buffering while maintaining **data alignment** for parallel RNN loading.
 - Once **all 40 neuron inputs (80 bytes)** are received, the control logic asserts **`esn_start = 1`**, enabling a **parallel load** of the full input set into the RNN.

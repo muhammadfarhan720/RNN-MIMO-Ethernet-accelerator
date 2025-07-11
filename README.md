@@ -40,8 +40,10 @@ This project contains design architecture similar to the following research pape
 - The RNN accepts **40 input neurons**, each requiring **16-bit input data** per cycle.
 - Since the input arrives as an **8-bit AXI4-Stream byte stream**, every **two bytes are assembled into one 16-bit word**.
 - A **Ping-Pong buffer mechanism** is implemented to store the incoming data:
+  
   - **Even-indexed neurons (0–19)** are stored in the **Ping** buffer.
   - **Odd-indexed neurons (20–39)** are stored in the **Pong** buffer.
+
 - This alternating write scheme allows continuous, conflict-free buffering while maintaining **data alignment** for parallel RNN loading.
 - Once **all 40 neuron inputs (80 bytes)** are received, the control logic asserts **`esn_start = 1`**, enabling a **parallel load** of the full input set into the RNN.
 - The RNN then performs **MAC operations followed by tanh activation**, generating updated neuron states.

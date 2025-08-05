@@ -37,7 +37,7 @@ This project contains design architecture similar to the following research pape
 (Using Ping-Pong buffer for seamless data loading to 40 input neurons of RNN network in parallel)
 
 - **`esn_core.v`** serves as the top-level module integrating control logic and instantiated submodules for the RNN accelerator.
-- The RNN accepts **40 input neurons**, each requiring **16-bit input data** per cycle.
+- The RNN accepts **40 input neurons** for taking the receiver data and contains **2 output neurons** for predicting the OFDM symbol for received signals on X-Y plot, each neuron (input & output) requiring **16-bit word** per cycle.
 - Since the input arrives as an **8-bit AXI4-Stream byte stream**, every **two bytes are assembled into one 16-bit word**.
 - A **Ping-Pong buffer mechanism** is implemented to store the incoming data after concatening 2 bytes to word format:
   

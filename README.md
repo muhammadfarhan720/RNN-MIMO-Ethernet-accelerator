@@ -19,7 +19,7 @@ This project contains design architecture similar to the following research pape
 
   --> **RNN_Accelerator**: The source files for the Recurrent Neural Network (RNN) chip accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
 
-  --> **Ethernet_UART_Interface** : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
+  --> **Ethernet_UART_Interface** : The RTL modifications and required submodules for establishing data communication between host PC and the RNN Accelerator through Ethernet-PHY IP and UART protocol
   
 
 - **ESN_MIMO_e3** : This folder contains the RTL implementation and the project archive in vivado format (.xpr) for the RNN accelerator and it's establishment of data communication with host PC through Ethernet and UART protocol using TEMAC Ethernet IP wrapper and UART HDL wrappers respectively.

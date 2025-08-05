@@ -1,5 +1,5 @@
 # RNN-MIMO-Ethernet-accelerator
-This repository hosts the RTL design & FPGA implementation of a hardware-friendly Recurrent Neural Network inference chip accelerator for MIMO-OFDM symbol detection on a Xilinx VC-707 FPGA. 
+This repository hosts the RTL design & FPGA implementation of a hardware-friendly Recurrent Neural Network (RNN) inference chip accelerator for MIMO-OFDM symbol detection on a Xilinx VC-707 FPGA. 
 ![Jointed_Platform](https://github.com/user-attachments/assets/281cf099-ec1e-41de-ab0e-c1855a5c1d6b)
 
 
@@ -17,7 +17,7 @@ This project contains design architecture similar to the following research pape
 
 - **RTL_files**: This folder contains two following subfolders :
 
-  --> **RNN_Accelerator**: The source files for the RNN accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
+  --> **RNN_Accelerator**: The source files for the Recurrent Neural Network (RNN) chip accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
 
   --> **Ethernet_UART_Interface** : The RTL modifications and required submodules for establishing data communication between host PC and the Accelerator through Ethernet-PHY IP and UART protocol
   

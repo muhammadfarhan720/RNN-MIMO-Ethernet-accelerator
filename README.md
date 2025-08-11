@@ -15,7 +15,7 @@ This project contains design architecture similar to the following research pape
 
 # Folder Contents :
 
-- **SystemVerilog_RTL_designs**: This folder contains two following subfolders :
+- **SystemVerilog_RTL_design_codes**: This folder contains two following subfolders :
 
   --> **RNN_Accelerator**: The source files for the Recurrent Neural Network (RNN) chip accelerator (esn_core.v) it's submodules along with testbench for core design verification with datasets and python trained weights.
 

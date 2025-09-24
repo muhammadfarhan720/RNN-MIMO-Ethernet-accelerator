@@ -90,8 +90,8 @@ sequenceDiagram
 - **`digitalesn_top.v`** is the top module that integrates the **ESN accelerator**, **UART control logic**, and **Ethernet/UDP configuration** for host–FPGA interaction.
 
 - The trained weight parameter files are:
-  - Loaded through the **`loadweights`** module into the accelerator (**`esn_core.v`**),
-  - Then returned back to the host PC via the **`return_conf`** module, confirming successful on-board memory write.
+  - Loaded through the **`loadweights`** module by utilizing UART protocol into the accelerator (**`esn_core.v`**),
+  - Then returned back to the host PC using UART protocol via the **`return_conf`** module, confirming successful on-board memory write.
  
     
 - **`eth_gmii_temac_design.v`** is the top-level RTL for interfacing with the **TEMAC Ethernet PHY**.

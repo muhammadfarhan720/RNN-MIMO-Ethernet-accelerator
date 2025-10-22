@@ -45,6 +45,65 @@ module demo_tb;
   parameter TB_MODE = "DEMO";  //BIST?
 
   `define FRAME_TYP [8*62+62+62+8*4+4+4+8*4+4+4+1:1]
+  
+  
+  
+
+
+  //----------------------------------------------------------------------------
+  // Test Bench signals and constants
+  //----------------------------------------------------------------------------
+
+  // Delay to provide setup and hold timing at the GMII/RGMII.
+  parameter dly = 4800;  // relaxed timing from requirement of 6ns
+
+  
+  parameter gtx_period = 4000;  // ps
+  
+
+
+  // testbench signals
+  
+  reg         gtx_clk;
+      
+  
+  reg         reset;
+  reg         demo_mode_error = 1'b0;
+
+  wire        gmii_tx_en;
+  wire        gmii_tx_er;
+  wire [7:0]  gmii_txd;
+  reg         gmii_rx_dv;
+  reg         gmii_rx_er;
+  reg  [7:0]  gmii_rxd;
+
+  // testbench control semaphores
+  reg  tx_monitor_finished_1G;
+  reg  management_config_finished;
+
+  reg [1:0] phy_speed;
+  reg [1:0] mac_speed;
+  reg       update_speed;
+
+  wire [7:0]   gmii_rxd_dut;
+  wire         gmii_rx_dv_dut;
+  wire         gmii_rx_er_dut;
+
+  reg          gen_tx_data;
+  reg          check_tx_data;
+  reg          config_bist;
+  
+  wire         frame_error;
+  reg          bist_mode_error;
+  wire         serial_response;
+
+
+
+  // select between loopback or local data
+  assign gmii_rxd_dut   = (TB_MODE == "BIST") ? gmii_txd   : gmii_rxd;
+  assign gmii_rx_dv_dut = (TB_MODE == "BIST") ? gmii_tx_en : gmii_rx_dv;
+  assign gmii_rx_er_dut = (TB_MODE == "BIST") ? gmii_tx_er : gmii_rx_er;
+
 
 
 
@@ -467,62 +526,6 @@ module demo_tb;
     end
   endtask // calc_crc
 
-
-
-
-  //----------------------------------------------------------------------------
-  // Test Bench signals and constants
-  //----------------------------------------------------------------------------
-
-  // Delay to provide setup and hold timing at the GMII/RGMII.
-  parameter dly = 4800;  // relaxed timing from requirement of 6ns
-
-  
-  parameter gtx_period = 4000;  // ps
-  
-
-
-  // testbench signals
-  
-  reg         gtx_clk;
-      
-  
-  reg         reset;
-  reg         demo_mode_error = 1'b0;
-
-  wire        gmii_tx_en;
-  wire        gmii_tx_er;
-  wire [7:0]  gmii_txd;
-  reg         gmii_rx_dv;
-  reg         gmii_rx_er;
-  reg  [7:0]  gmii_rxd;
-
-  // testbench control semaphores
-  reg  tx_monitor_finished_1G;
-  reg  management_config_finished;
-
-  reg [1:0] phy_speed;
-  reg [1:0] mac_speed;
-  reg       update_speed;
-
-  wire [7:0]   gmii_rxd_dut;
-  wire         gmii_rx_dv_dut;
-  wire         gmii_rx_er_dut;
-
-  reg          gen_tx_data;
-  reg          check_tx_data;
-  reg          config_bist;
-  
-  wire         frame_error;
-  reg          bist_mode_error;
-  wire         serial_response;
-
-
-
-  // select between loopback or local data
-  assign gmii_rxd_dut   = (TB_MODE == "BIST") ? gmii_txd   : gmii_rxd;
-  assign gmii_rx_dv_dut = (TB_MODE == "BIST") ? gmii_tx_en : gmii_rx_dv;
-  assign gmii_rx_er_dut = (TB_MODE == "BIST") ? gmii_tx_er : gmii_rx_er;
 
   
 

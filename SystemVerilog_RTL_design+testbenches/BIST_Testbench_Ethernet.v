@@ -111,7 +111,7 @@ module demo_tb;
   // Wire up Device Under Test
   //----------------------------------------------------------------------------
 
-  esn_core_with_FIFO dut
+  esn_core dut
     (
       // asynchronous reset
       .glbl_rst                   (reset),

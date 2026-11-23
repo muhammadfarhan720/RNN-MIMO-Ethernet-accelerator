@@ -1,7 +1,7 @@
 Current:
 The MIMO simulation works well.
 The UART-configuration-communication works well.
-The ethernet-data-communication cannot work.
+The ethernet-data-communication 
 
 Added a by-pass register-read/write logic inside the esn_core.
 Only use the esn_core_tb as the testbench

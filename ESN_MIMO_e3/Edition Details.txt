@@ -5,7 +5,7 @@ The ethernet-data-communication
 
 Added a by-pass register-read/write logic inside the esn_core.
 Only use the esn_core_tb as the testbench
-The simulation waveform looks good but still not work on FPGA.
+The simulation waveform looks good 
 
 TODO:
 Use the demo_tb.v to test the esn_core_with_FIFO
